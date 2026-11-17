@@ -7,6 +7,14 @@
 			"slug": "commercial",
 			"audio": "commercial.mp3",
 			"date": "N/A"
+		},
+		{
+			"title": "Animation",
+			"description": "[description]",
+			"published": false,
+			"slug": "animation",
+			"audio": "animation.mp3",
+			"date": "N/A"
 		}
 	]
 }

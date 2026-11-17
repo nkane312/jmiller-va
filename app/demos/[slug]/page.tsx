@@ -54,7 +54,9 @@ export default async function PostPage({ params }: { params: Params }) {
 									</p>
 								) : null}
 
-								<p className="mt-6 text-lg leading-8 text-zinc-300">{demo.description}</p>
+								{demo.description !== '[description]' ? (
+									<p className="mt-6 text-lg leading-8 text-zinc-300">{demo.description}</p>
+								) : null}
 							</div>
 
 							<div className="mx-auto mt-10 w-full max-w-2xl lg:mx-0">

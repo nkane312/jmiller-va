@@ -11,9 +11,6 @@ export default function DemosPage() {
 			<main className="w-screen h-screen overflow-hidden px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
 					<h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Demos</h1>
-					<p className="mt-4 text-zinc-400">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 
@@ -36,13 +33,15 @@ export default function DemosPage() {
 
 									<h2
 										id="featured-post"
-										className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-yellow-100 sm:text-4xl font-display"
+										className="mt-4 mb-8 text-3xl font-bold text-zinc-100 group-hover:text-yellow-100 sm:text-4xl font-display"
 									>
 										{demo.title}
 									</h2>
-									<p className="mt-4 font-semibold leading-8 duration-150 text-zinc-200 group-hover:text-zinc-100 mb-7">
-										{demo.description}
-									</p>
+									{demo.description !== '[description]' ? (
+										<p className="mt-4 font-semibold leading-8 duration-150 text-zinc-200 group-hover:text-zinc-100 mb-7">
+											{demo.description}
+										</p>
+									) : null}
 									<div className="absolute bottom-4 md:bottom-8">
 										<p className="hidden text-zinc-200 hover:text-zinc-100 lg:block">
 											View more <span aria-hidden="true">&rarr;</span>

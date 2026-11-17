@@ -7,6 +7,7 @@
 		"build": "next build",
 		"start": "npx serve@latest out",
 		"restart": "next build && npx serve@latest out",
+		"watch": "nodemon --watch app --watch public --watch next.config.ts --watch tailwind.config.ts --watch postcss.config.mjs --watch tsconfig.json --watch package.json --ext ts,tsx,js,jsx,css,json,mjs --exec \"npm run restart\"",
 		"lint": "next lint"
 	},
 	"dependencies": {
@@ -23,6 +24,7 @@
 		"@types/react-dom": "^19.3.0",
 		"eslint": "^8",
 		"eslint-config-next": "14.2.35",
+		"nodemon": "^3.1.14",
 		"postcss": "^8",
 		"tailwindcss": "^4.3.3",
 		"typescript": "^5"

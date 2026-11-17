@@ -9,7 +9,7 @@ export default function Contact() {
 			<Navigation />
 			<main className="min-h-screen px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
 				<div className="max-w-2xl mx-auto lg:mx-0">
-					<h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">Bio</h1>
+					<h1 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">About</h1>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 				<div className="container flex items-center justify-center px-4 mx-auto">
